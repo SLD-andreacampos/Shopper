@@ -6,6 +6,35 @@ if(q){
   });
 }
 
+const faqSearch=document.querySelector('[data-faq-search]');
+const faqItems=[...document.querySelectorAll('[data-faq-item]')];
+const faqGroups=[...document.querySelectorAll('[data-faq-group]')];
+const faqCount=document.querySelector('[data-faq-count]');
+const faqEmpty=document.querySelector('[data-faq-empty]');
+const faqButtons=[...document.querySelectorAll('[data-faq-category]')];
+let faqCategory='all';
+const normalizeFaq=text=>text.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function filterFaq(){
+  const term=normalizeFaq(faqSearch?.value||'').trim();
+  let visible=0;
+  faqItems.forEach(item=>{
+    const categoryOk=faqCategory==='all'||item.dataset.category===faqCategory;
+    const textOk=!term||normalizeFaq(item.textContent).includes(term);
+    item.hidden=!(categoryOk&&textOk);
+    if(!item.hidden)visible++;
+  });
+  faqGroups.forEach(group=>group.hidden=![...group.querySelectorAll('[data-faq-item]')].some(item=>!item.hidden));
+  if(faqCount)faqCount.textContent=`${visible} ${visible===1?'respuesta':'respuestas'}`;
+  if(faqEmpty)faqEmpty.hidden=visible!==0;
+}
+faqSearch?.addEventListener('input',filterFaq);
+faqButtons.forEach(button=>button.addEventListener('click',()=>{
+  faqCategory=button.dataset.faqCategory;
+  faqButtons.forEach(item=>item.classList.toggle('active',item===button));
+  filterFaq();
+}));
+if(faqItems.length)filterFaq();
+
 const sidebar=document.querySelector('.sidebar');
 document.querySelector('.menu-btn')?.addEventListener('click',()=>sidebar?.classList.toggle('open'));
 addEventListener('keydown',e=>{
@@ -66,4 +95,11 @@ if(article&&headings.length){
     }
     sidebar?.classList.remove('open');
   }));
+
+  if(location.hash){
+    requestAnimationFrame(()=>{
+      const target=document.querySelector(location.hash);
+      if(target)window.scrollTo({top:target.getBoundingClientRect().top+window.scrollY-70,behavior:'instant'});
+    });
+  }
 }

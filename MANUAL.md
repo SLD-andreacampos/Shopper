@@ -19,6 +19,56 @@
 13. [Promotor y app móvil](#promotor-app)
 14. [Vídeos formativos](#videos-formativos)
 
+
+
+
+
+<!-- HELP-CENTER-START -->
+## Primeros pasos
+<a id="primeros-pasos"></a>
+
+Elige tu perfil o la tarea que necesitas realizar. Cada enlace abre directamente el procedimiento correspondiente.
+
+### Promotor: recorrido esencial
+
+1. [Acceder a la app](pages/promotor-app.html#1-descarga-y-acceso).
+2. [Registrar la jornada](pages/promotor-app.html#4-fichajes-desde-la-app).
+3. [Consultar la ruta e iniciar una visita](pages/promotor-app.html#2-ruta-y-comienzo-de-la-visita).
+4. [Completar tareas y Formularios Avanzados](pages/promotor-app.html#5-tareas-y-formularios-avanzados).
+5. [Finalizar la visita](pages/promotor-app.html#6-check-out-y-confirmacion).
+6. [Registrar un trayecto](pages/promotor-app.html#3-registro-de-trayectos).
+
+### Back Office: tareas iniciales
+
+- [Gestionar Puntos de Venta](pages/puntos-de-venta.html).
+- [Gestionar empleados](pages/empleados.html).
+- [Asignar PDV a usuarios](pages/asignacion-pdv-usuarios.html).
+- [Mantener el catálogo](pages/catalogo-productos.html).
+- [Crear equipos de trabajo](pages/equipos.html).
+- [Planificar rutas](pages/rutas.html).
+
+### Plantillas y cargas
+
+- [Puntos de Venta](downloads/CargaPuntosDeVenta.xlsx)
+- [Asignación PDV–usuarios](downloads/CargaPuntosDeVentaUsuarios.xlsx)
+- [Empleados](downloads/CargaDeEmpleados.xlsx)
+- [Absentismos](downloads/CargaAbsentismos.xlsx)
+- [Líneas de producto](downloads/CargaLineaProductos.xlsx)
+- [Productos](downloads/CargaProductos.xlsx)
+- [Rutas programadas](downloads/CargaRutasProgramadas.xlsx)
+- [Asistencia laboral](downloads/CargaAsistenciaLaboral.xlsx)
+
+Para corregir una carga, abre **Ver Hco. Cargas**, consulta el detalle, corrige la plantilla y repite el proceso.
+
+### Administración: puesta a punto
+
+1. [Revisar componentes maestros](pages/panel-control.html#componentes-maestros).
+2. [Revisar la configuración de campos](pages/panel-control.html#configuracion-de-campos).
+3. [Configurar roles y permisos](pages/panel-control.html#gestion-de-roles).
+4. [Revisar los parámetros de campaña](pages/panel-control.html#configuracion-campana).
+
+<!-- HELP-CENTER-END -->
+
 ## 1. Puntos de Venta
 <a id="puntos-de-venta"></a>
 
@@ -950,6 +1000,128 @@ Permite registrar desplazamientos realizados fuera del horario para que queden r
 
 
 **Vídeos para Promotor:** [Abrir la videoteca](pages/videos-formativos.html#promotor).
+<!-- FAQ-START -->
+## Preguntas frecuentes
+<a id="preguntas-frecuentes"></a>
+
+### Promotor y app
+
+**¿Por qué no aparece Jornada / Fichaje?**
+
+El administrador debe comprobar que el cargo tenga habilitado Panel de Control › Gestión de roles › App › Aplicación móvil - Jornada / Fichaje. [Abrir procedimiento](promotor-app.html#4-fichajes-desde-la-app).
+
+**¿Cómo sé si mi jornada ha comenzado correctamente?**
+
+La pantalla debe mostrar el estado En curso y la hora de Entrada registrada. [Abrir procedimiento](promotor-app.html#4-fichajes-desde-la-app).
+
+**¿Cómo termino un descanso?**
+
+Abre Jornada / Fichaje y pulsa Fin de descanso. La actividad mostrará el intervalo completo del descanso. [Abrir procedimiento](promotor-app.html#4-fichajes-desde-la-app).
+
+**¿Cómo sé si la jornada ha finalizado?**
+
+Debe aparecer Jornada completada, el estado Completada y las horas de entrada, descanso y salida. [Abrir procedimiento](promotor-app.html#4-fichajes-desde-la-app).
+
+**¿Registro de trayectos es lo mismo que Rutas?**
+
+No. Rutas muestra la planificación de visitas. Registro de trayectos guarda desplazamientos realizados y aparece como módulo independiente. [Abrir procedimiento](promotor-app.html#3-registro-de-trayectos).
+
+**¿Por qué no aparece Registro de trayectos?**
+
+El administrador debe comprobar el permiso Panel de Control › Gestión de roles › App › Aplicación móvil - Registro Trayectos. [Abrir procedimiento](promotor-app.html#3-registro-de-trayectos).
+
+**¿Qué hago si una dirección no aparece al registrar un trayecto?**
+
+Comprueba la conexión y escribe una dirección más completa. Antes de guardar, revisa en el mapa el orden de las paradas y el destino. [Abrir procedimiento](promotor-app.html#3-registro-de-trayectos).
+
+**¿Por qué no puedo finalizar una visita?**
+
+Revisa que las tareas requeridas y sus campos obligatorios estén completados antes de abrir Check-out. [Abrir procedimiento](promotor-app.html#6-check-out-y-confirmacion).
+
+### Altas y gestión
+
+**¿Dónde se da de alta un Punto de Venta?**
+
+Abre Gestión › Gestión Puntos de Venta y utiliza Nuevo punto de venta para el alta unitaria. [Abrir procedimiento](puntos-de-venta.html#alta-unitaria).
+
+**¿Cómo asigno establecimientos a un empleado?**
+
+Abre Asignación PDV–usuarios y utiliza Crear para una asignación individual o Alta masiva para trabajar con la plantilla. [Abrir procedimiento](asignacion-pdv-usuarios.html#crear-una-asignacion).
+
+**¿Dónde se crea un empleado?**
+
+Abre Gestión › Gestión Empleados y utiliza Nuevo empleado. El procedimiento separa los datos del empleado, usuario y gestión de cuentas. [Abrir procedimiento](empleados.html#alta-unitaria-de-empleados).
+
+**¿Eliminar un elemento del catálogo lo borra definitivamente?**
+
+En el catálogo, la acción Eliminar desactiva los registros seleccionados. [Abrir procedimiento](catalogo-productos.html#productos).
+
+### Cargas y plantillas
+
+**¿Debo utilizar una plantilla diferente para cada carga masiva?**
+
+Sí. Descarga la plantilla del módulo correspondiente: cada proceso utiliza sus propias columnas y validaciones. [Abrir procedimiento](primeros-pasos.html#plantillas-y-cargas).
+
+**¿Dónde consulto los errores de una carga masiva?**
+
+Abre Ver Hco. Cargas y entra en el detalle de la carga con errores. Corrige el archivo antes de repetir la carga. [Abrir procedimiento](primeros-pasos.html#plantillas-y-cargas).
+
+**¿En qué formato preparo una carga masiva?**
+
+Cuando el procedimiento lo indique, guarda la plantilla como CSV delimitado por comas, sin líneas vacías finales y respetando el límite de 4 MB. [Abrir procedimiento](primeros-pasos.html#plantillas-y-cargas).
+
+**¿Dónde están las plantillas oficiales?**
+
+Cada procedimiento enlaza su plantilla correspondiente. La página Primeros pasos reúne accesos directos a las cargas principales. [Abrir procedimiento](primeros-pasos.html#plantillas-y-cargas).
+
+### Formularios Avanzados
+
+**¿Dónde añado secciones, campos y dependencias?**
+
+En Formularios Avanzados, completa Configuración y Estructura y control; después abre Diseño y utiliza Añadir. [Abrir procedimiento](formularios-avanzados.html#disenar-secciones-campos-y-dependencias).
+
+**¿Qué tipos de campo puedo utilizar?**
+
+El selector incluye Archivo, Buscador, Calificación, Check, Email, Escala lineal, Fecha, Firma, Imagen, Numérico, Selectores, Texto libre, Título, Ubicación y Vídeo. [Abrir procedimiento](formularios-avanzados.html#disenar-secciones-campos-y-dependencias).
+
+**¿Qué ocurre al eliminar un Formulario Avanzado?**
+
+Si no tiene reportes asociados se elimina; cuando existen reportes asociados, se desactiva. [Abrir procedimiento](formularios-avanzados.html#operaciones-relacionadas).
+
+**¿Cómo compruebo un formulario desde la app?**
+
+Durante una visita, abre Tareas, completa los campos obligatorios, pulsa Guardar y comprueba que el formulario figure como completado. [Abrir procedimiento](promotor-app.html#5-tareas-y-formularios-avanzados).
+
+### Informes
+
+**¿Qué hago si un informe no devuelve resultados?**
+
+Revisa el tipo de informe, el intervalo de fechas y los filtros aplicados. Un resultado vacío puede deberse al periodo o a la selección. [Abrir procedimiento](informes.html#elegir-un-informe-generico).
+
+**¿Dónde consulto fotografías de Formularios Avanzados?**
+
+Abre Informes › Fotos Formularios Avanzados y selecciona el formulario, el usuario y los filtros disponibles. [Abrir procedimiento](informes.html#consultar-fotografias-de-formularios-avanzados).
+
+**¿Dónde consulto el recorrido de un usuario?**
+
+Abre Informes › Tracking, indica las fechas y selecciona el usuario antes de buscar. [Abrir procedimiento](informes.html#consultar-tracking).
+
+### Administración
+
+**¿Cómo habilito una función para un cargo?**
+
+Abre Panel de Control › Gestión de roles, localiza el cargo, pulsa el engranaje y revisa los módulos Web o App. [Abrir procedimiento](panel-control.html#configurar-modulos-web-y-app-de-un-cargo).
+
+**¿Dónde se configura la disponibilidad de valores maestros?**
+
+En Panel de Control › Componentes maestros, selecciona la tabla y utiliza Activar o Desactivar sobre el valor correspondiente. [Abrir procedimiento](panel-control.html#consultar-y-mantener-componentes-maestros).
+
+**¿Por qué un usuario no ve una función de la app?**
+
+Comprueba el cargo del usuario y los permisos de la pestaña App dentro de Gestión de roles. [Abrir procedimiento](panel-control.html#configurar-modulos-web-y-app-de-un-cargo).
+
+<!-- FAQ-END -->
+
 ## 14. Vídeos formativos
 <a id="videos-formativos"></a>
 
